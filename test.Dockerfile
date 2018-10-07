@@ -4,5 +4,5 @@ RUN apt-get update
 RUN apt-get install -y python
 RUN apt-get install -y git
 WORKDIR /home
-ENTRYPOINT ["git", "clone", "https://github.com/solarcreeper/docker_auto_build.git"]
-CMD ["python", "/home/docker_auto_build/helloworld.py"]
+CMD ["git", "clone", "https://github.com/solarcreeper/docker_auto_build.git"]
+ENTRYPOINT ["python", "/home/docker_auto_build/helloworld.py"]
